@@ -1,6 +1,6 @@
 # RoboticProject
 
-################################################################################################################################
+
 # On the Turtlebot laptop #
 
 ##### Initialisation with the Turtlebot #####
@@ -16,7 +16,7 @@ roslaunch turtlebot_brinup 3dsensor.launch
 
 
 
-################################################################################################################################
+
 # On the teleoperating laptop #
 
 ##### For simulation only #####
@@ -47,15 +47,12 @@ roslaunch find_object_2d find_object_3d.launch subscribe_depth:=true _image_tran
 
 
 
-#####  Color detection #####:
+#####  Color detection #####
 
 # In HSV:
 roslaunch opencv_apps red_hsv_color_filter.launch
 
 
-
-
-################################################################################################################################
 ##### Additional command lines  ######
 
 catkin_make													# Build the workspace
