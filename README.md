@@ -7,13 +7,11 @@
 
 roscore
 
-roslaunch turtlebot_brinup minimal_with_hokuyo..launch
+roslaunch turtlebot_brinup minimal_with_hokuyo.launch
 
 rosrun hokuyo_node hokuyo_node
 
 roslaunch turtlebot_brinup 3dsensor.launch
-
-
 
 
 
