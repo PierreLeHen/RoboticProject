@@ -35,6 +35,8 @@ rosrun simple_navigation_goals simple_navigation_goals
 
 ##### Find_object_2d pkg #####
 
+In find_object_2d package place the find_object_3d.launch file in the launch directory and then run the command line in the terminal
+
 # For 2d identification:
 rosrun find_object_2d find_object_2d image:=/camera/rgb/image_raw _image_transport:=compressed _objects_path:=:=~/path/to/samples
 
@@ -42,6 +44,8 @@ rosrun find_object_2d find_object_2d image:=/camera/rgb/image_raw _image_transpo
 roslaunch find_object_2d find_object_3d.launch subscribe_depth:=true _image_transport:=compressed _objects_path:=~/path/to/samples
 
 #####  Color detection #####
+
+In opencv_apps package, place the red_hsv_color_filter.launch file in the launch directory and then run the commad line in the terminal
 
 # In HSV
 roslaunch opencv_apps red_hsv_color_filter.launch
