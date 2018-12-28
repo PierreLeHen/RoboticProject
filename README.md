@@ -7,7 +7,7 @@
 
 roscore
 
-roslaunch turtlebot_brinup minimal_with_hokuyo.launch
+roslaunch turtlebot_bringup minimal_with_hokuyo.launch
 
 rosrun hokuyo_node hokuyo_node
 
@@ -50,6 +50,15 @@ roslaunch find_object_2d find_object_3d.launch subscribe_depth:=true _image_tran
 # In HSV:
 roslaunch opencv_apps red_hsv_color_filter.launch
 
+##### Links GitHub ######
+
+# Find Object 2D
+
+https://github.com/introlab/find-object/tree/master#find_object_2d-ros-package
+
+# Open CV
+
+https://github.com/ros-perception/opencv_apps
 
 ##### Additional command lines  ######
 
@@ -64,14 +73,3 @@ sudo chmod a+rw dev/port number								# if the access to the port of hokuyo_nod
 roslaunch turtlebot_teleop keyboard_teleop.launch			# teleoperates the Turtlebot with the keyboard
 
 rostopic echo /amcl_pose                      #get the pose and the orientation of the robot from AMCL
-
-
-##### Links GitHub ######
-
-# Find Object 2D
-
-https://github.com/introlab/find-object/tree/master#find_object_2d-ros-package
-
-# Open CV
-
-https://github.com/ros-perception/opencv_apps
