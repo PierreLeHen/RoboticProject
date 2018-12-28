@@ -52,11 +52,11 @@ roslaunch opencv_apps red_hsv_color_filter.launch
 
 # Links GitHub #
 
-##### Find Object 2D####
+##### Find Object 2D#####
 
 https://github.com/introlab/find-object/tree/master#find_object_2d-ros-package
 
-# Open CV
+##### Open CV #####
 
 https://github.com/ros-perception/opencv_apps
 
