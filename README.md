@@ -33,7 +33,7 @@ roslaunch turtlebot_navigation amcl_launch.demo map_file:='path of the file'
 # To reach a goal saved in a file
 rosrun simple_navigation_goals simple_navigation_goals
 
-##### Find_object_2d pkg #####
+# Find_object_2d pkg #
 
 In find_object_2d package place the find_object_3d.launch file in the launch directory and then run the command line in the terminal
 
@@ -43,16 +43,16 @@ rosrun find_object_2d find_object_2d image:=/camera/rgb/image_raw _image_transpo
 # For 3d identification
 roslaunch find_object_2d find_object_3d.launch subscribe_depth:=true _image_transport:=compressed _objects_path:=~/path/to/samples
 
-#####  Color detection #####
+#  Color detection #
 
 In opencv_apps package, place the red_hsv_color_filter.launch file in the launch directory and then run the commad line in the terminal
 
-# In HSV
+# In HSV #
 roslaunch opencv_apps red_hsv_color_filter.launch
 
-##### Links GitHub ######
+# Links GitHub #
 
-# Find Object 2D
+##### Find Object 2D####
 
 https://github.com/introlab/find-object/tree/master#find_object_2d-ros-package
 
