@@ -30,7 +30,7 @@ rosrun map_server map_saver -f 'name of the file'
 # To launch AMCL + move base
 roslaunch turtlebot_navigation amcl_launch.demo map_file:='path of the file'
 
-# To reach a goal saved in a file
+# To reach a goal saved in the file simple_navigation_goals.cpp
 rosrun simple_navigation_goals simple_navigation_goals
 
 # Find_object_2d pkg #
