@@ -60,7 +60,7 @@ https://github.com/introlab/find-object/tree/master#find_object_2d-ros-package
 
 https://github.com/ros-perception/opencv_apps
 
-##### Additional command lines  ######
+# Additional command lines  
 
 catkin_make													# Build the workspace
 
