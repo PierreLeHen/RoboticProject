@@ -13,8 +13,6 @@ rosrun hokuyo_node hokuyo_node
 
 roslaunch turtlebot_brinup 3dsensor.launch
 
-
-
 # On the teleoperating laptop #
 
 ##### For simulation only #####
@@ -23,10 +21,10 @@ roslaunch turtlebot_gazebo turtlebot_world.launch world_file:=path/to/file.world
 
 #### For real world ####
 
-# To create the map:
+# To create the map
 rosrun gmapping slam_gmapping scan:/scan
 
-# To save the map:
+# To save the map
 rosrun map_server map_saver -f 'name of the file'
 
 # To launch AMCL + move base
@@ -40,14 +38,12 @@ rosrun simple_navigation_goals simple_navigation_goals
 # For 2d identification:
 rosrun find_object_2d find_object_2d image:=/camera/rgb/image_raw _image_transport:=compressed _objects_path:=:=~/path/to/samples
 
-# For 3d identification;
+# For 3d identification
 roslaunch find_object_2d find_object_3d.launch subscribe_depth:=true _image_transport:=compressed _objects_path:=~/path/to/samples
-
-
 
 #####  Color detection #####
 
-# In HSV:
+# In HSV
 roslaunch opencv_apps red_hsv_color_filter.launch
 
 ##### Links GitHub ######
